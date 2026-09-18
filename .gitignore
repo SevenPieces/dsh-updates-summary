@@ -1,0 +1,24 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Logs and local environment
+*.log
+.env
+.env.*
+
+# Dependencies - these scripts use only the Node standard library,
+# so this only guards against a stray install
+node_modules/
+
+# Run artifacts. The collector and the report are written to the working
+# directory, never into this repository; ignored here only so an in-tree run
+# stays clean.
+.dsh-updates-digest.json
+dsh-updates-*.md
